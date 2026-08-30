@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Free Anti-Rabies Vaccination Drive | Animals With Humanity</title>
     <meta name="description"
-        content="Register your dog for a free anti-rabies vaccination drive by Animals With Humanity, in partnership with WVS, Paw People and Hope Animal Clinic. Over 1,100 dogs protected in 2025." />
+        content="Register your community dog for a free anti-rabies vaccination drive by Animals With Humanity, in partnership with WVS, Paw People and Hope Animal Clinic. Over 1,100 dogs protected in 2025." />
 
     <!-- Favicon -->
     <link rel="icon" href="assets/images/logo.png" type="image/png" />
@@ -81,14 +81,20 @@
         <div class="max-w-6xl mx-auto flex items-center gap-3 px-4 lg:px-6 py-2.5">
             <img src="assets/images/logo.png" alt="Animals With Humanity logo"
                 class="w-10 h-10 rounded-full object-contain shrink-0" />
-            <div class="leading-tight">
-                <p class="font-bold text-sm text-rabies-ink">Animals With Humanity</p>
-                <p class="text-xs text-rabies-orange-dark font-medium">Mission Rabies Vaccination Drive</p>
+            <div class="leading-tight min-w-0">
+                <p class="font-bold text-xs sm:text-sm text-rabies-ink truncate">Animals With Humanity</p>
+                <p class="hidden sm:block text-xs text-rabies-orange-dark font-medium">Mission Rabies Vaccination Drive</p>
             </div>
-            <a href="#register"
-                class="ml-auto text-xs font-bold bg-rabies-orange text-white px-3.5 py-2 rounded-full hover:bg-rabies-orange-dark transition">
-                Register
-            </a>
+            <div class="ml-auto flex items-center gap-2 shrink-0">
+                <a href="https://awhbharat.org/#financial-support" target="_blank" rel="noopener noreferrer"
+                    class="text-xs font-bold border border-rabies-orange text-rabies-orange-dark px-3 py-2 rounded-full hover:bg-orange-50 transition">
+                    Donate
+                </a>
+                <a href="#register"
+                    class="text-xs font-bold bg-rabies-orange text-white px-3 py-2 rounded-full hover:bg-rabies-orange-dark transition">
+                    Register
+                </a>
+            </div>
         </div>
     </header>
 
@@ -108,7 +114,7 @@
                         Free Anti‑Rabies Vaccination <span class="align-middle">🐶💉</span>
                     </h1>
                     <p class="mt-3 text-orange-50 text-[15px] lg:text-base leading-relaxed max-w-md mx-auto lg:mx-0">
-                        Protect your dog — and your family — from rabies. Our vets come to your area, free of cost.
+                        Protect your community dog - and your family - from rabies. Our vets come to your area, free of cost.
                     </p>
 
                     <!-- Impact stat -->
@@ -121,8 +127,9 @@
                     <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                         <a href="#register"
                             class="bg-white text-rabies-orange-dark font-bold px-6 py-3 rounded-xl shadow-lg hover:scale-[1.03] transition">
-                            Register My Dog
+                            Register My Community Dog
                         </a>
+                       
                         <a href="#awareness"
                             class="border border-white/40 text-white font-semibold px-6 py-3 rounded-xl hover:bg-white/10 transition">
                             Why Rabies Vaccination Matters
@@ -153,7 +160,7 @@
             <div class="flex justify-center items-end gap-6 sm:gap-10 lg:gap-16 px-4 max-w-lg lg:max-w-4xl mx-auto">
                 <div class="flex flex-col items-center gap-1.5 shrink-0">
                     <div
-                        class="w-20 h-20 sm:w-28 sm:h-28 lg:w-40 lg:h-40 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center p-2.5 sm:p-3.5 lg:p-5">
+                        class="w-20 h-20 sm:w-28 sm:h-28 lg:w-40 lg:h-40 bg-white rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center p-2.5 sm:p-3.5 lg:p-5">
                         <img src="assets/images/partner-wvs.png" alt="Worldwide Veterinary Service (WVS)"
                             class="w-full h-full object-contain" />
                     </div>
@@ -161,7 +168,7 @@
                 </div>
                 <div class="flex flex-col items-center gap-1.5 shrink-0">
                     <div
-                        class="w-20 h-20 sm:w-28 sm:h-28 lg:w-40 lg:h-40 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center p-2.5 sm:p-3.5 lg:p-5">
+                        class="w-20 h-20 sm:w-28 sm:h-28 lg:w-40 lg:h-40 bg-white rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center p-2.5 sm:p-3.5 lg:p-5">
                         <img src="assets/images/partner-awh.png" alt="Animals With Humanity (AWH)"
                             class="w-full h-full object-contain" />
                     </div>
@@ -169,7 +176,7 @@
                 </div>
                 <div class="flex flex-col items-center gap-1.5 shrink-0">
                     <div
-                        class="w-20 h-20 sm:w-28 sm:h-28 lg:w-40 lg:h-40 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center p-2.5 sm:p-3.5 lg:p-5">
+                        class="w-20 h-20 sm:w-28 sm:h-28 lg:w-40 lg:h-40 rounded-full bg-white bg-orange-50 border border-orange-100 flex items-center justify-center p-2.5 sm:p-3.5 lg:p-5">
                         <img src="assets/images/partner-missionrabies.png" alt="Mission Rabies"
                             class="w-full h-full object-contain" />
                     </div>
@@ -179,10 +186,33 @@
         </div>
     </section>
 
+    <!-- ===================== DONATE (high on the page so it is seen) ===================== -->
+    <section id="donate" class="max-w-2xl lg:max-w-6xl mx-auto px-4 lg:px-6 pt-6 lg:pt-8">
+        <div
+            class="bg-amber-50 border border-amber-200 rounded-2xl px-5 py-5 lg:px-8 lg:py-6 lg:flex lg:items-center lg:justify-between lg:gap-10">
+            <div class="text-center lg:text-left">
+                <p class="text-xs font-semibold uppercase tracking-wide text-rabies-orange-dark mb-1">
+                    The drive is 100% free for you
+                </p>
+                <h2 class="text-xl lg:text-2xl font-bold">Help us vaccinate 2,500 dogs</h2>
+                <p class="text-sm text-stone-600 mt-2 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Registration costs nothing. Each anti-rabies shot costs us about
+                    <strong>₹80</strong>. Your donation helps us reach more community dogs
+                    and keep this drive going.
+                </p>
+            </div>
+            <a href="https://awhbharat.org/#financial-support" target="_blank" rel="noopener noreferrer"
+                class="mt-4 lg:mt-0 inline-flex w-full sm:w-auto items-center justify-center gap-2 bg-rabies-orange text-white font-bold px-6 py-3 rounded-xl hover:bg-rabies-orange-dark transition shrink-0">
+                <i data-lucide="heart" class="w-4 h-4"></i>
+                Donate
+            </a>
+        </div>
+    </section>
+
     <!-- ===================== PHOTO CAROUSEL ===================== -->
     <section class="max-w-3xl lg:max-w-4xl mx-auto px-4 lg:px-6 pt-7 lg:pt-10">
         <h2 class="text-xl lg:text-2xl font-bold text-center">Our 2025 Drive in Pictures</h2>
-        <p class="text-center text-sm text-stone-500 mt-1 mb-4">Moments from the field — vaccinating 1,100+ dogs</p>
+        <p class="text-center text-sm text-stone-500 mt-1 mb-4">Moments from the field - vaccinating 1,100+ dogs</p>
 
         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-orange-100 bg-orange-50">
             <div id="carousel-track" class="flex">
@@ -223,7 +253,7 @@
                     <i data-lucide="skull" class="w-4 h-4 text-rabies-orange-dark"></i>
                 </div>
                 <p class="font-semibold text-sm">Rabies is almost always fatal</p>
-                <p class="text-xs text-stone-500 mt-1">Once symptoms appear, there is no cure — but it is 100%
+                <p class="text-xs text-stone-500 mt-1">Once symptoms appear, there is no cure - but it is 100%
                     preventable with
                     a timely vaccine.</p>
             </div>
@@ -232,7 +262,7 @@
                 <div class="w-9 h-9 rounded-full bg-orange-100 flex items-center justify-center mb-2">
                     <i data-lucide="dog" class="w-4 h-4 text-rabies-orange-dark"></i>
                 </div>
-                <p class="font-semibold text-sm">Dogs are the main source</p>
+                <p class="font-semibold text-sm">rabies are transmissible</p>
                 <p class="text-xs text-stone-500 mt-1">Most human rabies cases come from dog bites. Vaccinating dogs
                     protects
                     entire neighbourhoods.</p>
@@ -243,7 +273,7 @@
                     <i data-lucide="syringe" class="w-4 h-4 text-rabies-orange-dark"></i>
                 </div>
                 <p class="font-semibold text-sm">One shot, long protection</p>
-                <p class="text-xs text-stone-500 mt-1">A single anti-rabies vaccine gives your dog strong protection and
+                <p class="text-xs text-stone-500 mt-1">A single anti-rabies vaccine gives your community dog strong protection and
                     helps
                     stop the disease from spreading.</p>
             </div>
@@ -253,7 +283,7 @@
                     <i data-lucide="users" class="w-4 h-4 text-rabies-orange-dark"></i>
                 </div>
                 <p class="font-semibold text-sm">It protects people too</p>
-                <p class="text-xs text-stone-500 mt-1">Street and pet dogs live close to families — vaccinating them
+                <p class="text-xs text-stone-500 mt-1">Community dogs live close to families - vaccinating them
                     keeps
                     children and neighbours safe.</p>
             </div>
@@ -263,24 +293,24 @@
     <!-- ===================== ELIGIBILITY + FORM ===================== -->
     <div class="max-w-2xl lg:max-w-6xl mx-auto px-4 lg:px-6 py-5 lg:py-6">
 
-        <!-- ELIGIBILITY / NOTICE — compact bar above the form -->
+        <!-- ELIGIBILITY / NOTICE - compact bar above the form -->
         <section class="mb-3">
             <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 lg:px-4 lg:py-2.5">
                 <p class="font-bold text-sm flex items-center gap-2 mb-1.5 lg:mb-2">
                     <i data-lucide="alert-triangle" class="w-4 h-4 text-amber-600"></i>
-                    Before you register — please note
+                    Before you register - please note
                 </p>
                 <ul class="text-sm space-y-1.5 text-stone-700 lg:grid lg:grid-cols-3 lg:gap-4 lg:space-y-0">
-                    <li class="flex gap-2"><span class="text-rabies-orange-dark">•</span> You must be present when your
+                    <li class="flex gap-2"><span class="text-rabies-orange-dark">•</span> You must be present when your registered community 
                         dog is
                         vaccinated.</li>
-                    <li class="flex gap-2"><span class="text-rabies-orange-dark">•</span> Dogs must be dewormed before
-                        the shot —
-                        see dosage below.</li>
-                    <li class="flex gap-2"><span class="text-rabies-orange-dark">•</span> Minimum age to vaccinate:
-                        <strong>3
-                            months</strong>.
-                    </li>
+                        <li class="flex gap-2"><span class="text-rabies-orange-dark">•</span> Minimum age to vaccinate:
+                            <strong>3
+                                months</strong>.
+                            </li>
+                            <li class="flex gap-2"><span class="text-rabies-orange-dark">•</span> Dogs must be dewormed before
+                                the shot -
+                                see dosage below.</li>
                 </ul>
 
                 <details class="mt-2">
@@ -313,7 +343,7 @@
         <!-- ===================== FORM ===================== -->
         <section id="register">
             <div class="text-center lg:text-left mb-3">
-                <h2 class="text-xl lg:text-2xl font-bold">Register Your Dog</h2>
+                <h2 class="text-xl lg:text-2xl font-bold">Register Your Community Dog</h2>
                 <p class="text-sm text-stone-500 mt-0.5">Takes under a minute. We'll confirm your slot on WhatsApp or
                     call.</p>
             </div>
@@ -425,7 +455,7 @@
                     <div class="lg:col-span-2">
                         <label class="text-sm font-semibold block mb-1">Any specific health concerns?</label>
                         <textarea id="healthConcerns" name="healthConcerns" rows="2"
-                            placeholder="Optional — e.g. skin condition, pregnancy, injury"
+                            placeholder="Optional - e.g. skin condition, pregnancy, injury"
                             class="w-full border border-stone-200 rounded-xl px-3.5 py-2.5 lg:py-3 text-sm lg:text-base focus:outline-none focus:ring-2 focus:ring-rabies-orange"></textarea>
                     </div>
                     </div>
@@ -457,9 +487,9 @@
                         </legend>
                         <p id="nine-in-one-info"
                             class="hidden text-xs text-stone-600 bg-orange-50 border border-orange-100 rounded-lg p-2.5 mb-2 leading-relaxed">
-                            The 9-in-1 vaccine protects your dog against 9 other common canine diseases (like
+                            The 9-in-1 vaccine protects your community dog against 9 other common canine diseases (like
                             Parvovirus, Distemper and
-                            Hepatitis) — separate from rabies. It's optional and comes at an extra cost; our team can
+                            Hepatitis) - separate from rabies. It's optional and comes at an extra cost; our team can
                             share the price
                             when they contact you.
                         </p>
@@ -494,7 +524,7 @@
                     <button type="submit" id="submit-btn"
                         class="hidden w-full sm:flex-1 lg:flex-none lg:w-64 bg-rabies-orange text-white font-bold text-[15px] py-3 rounded-xl hover:bg-rabies-orange-dark transition items-center justify-center gap-2 whitespace-nowrap">
                         <i data-lucide="check-circle" class="w-4 h-4 shrink-0"></i>
-                        Register — It's Free
+                        Register - It's Free
                     </button>
                 </div>
             </form>
@@ -512,7 +542,7 @@
                     Is this really 100% free?
                     <i data-lucide="chevron-down" class="w-4 h-4 faq-chevron text-rabies-orange-dark"></i>
                 </summary>
-                <p class="text-sm text-stone-600 mt-2">Yes — the anti-rabies vaccine is completely free. The only paid
+                <p class="text-sm text-stone-600 mt-2">Yes - the anti-rabies vaccine is completely free. The only paid
                     add-on is
                     the optional 9-in-1 vaccine, and only if you choose it.</p>
             </details>
@@ -529,10 +559,10 @@
 
             <details class="bg-white border border-orange-100 rounded-xl px-4 py-3">
                 <summary class="flex items-center justify-between cursor-pointer font-semibold text-sm">
-                    My dog is aggressive or scared of strangers — can I still register?
+                    My dog is aggressive or scared of strangers - can I still register?
                     <i data-lucide="chevron-down" class="w-4 h-4 faq-chevron text-rabies-orange-dark"></i>
                 </summary>
-                <p class="text-sm text-stone-600 mt-2">Yes. Just mark the temperament honestly in the form — our trained
+                <p class="text-sm text-stone-600 mt-2">Yes. Just mark the temperament honestly in the form - our trained
                     handlers know how to safely vaccinate nervous or aggressive dogs.</p>
             </details>
 
@@ -543,7 +573,7 @@
                 </summary>
                 <p class="text-sm text-stone-600 mt-2">A dewormed dog builds stronger immunity from the vaccine. Use the
                     dosage
-                    table above based on your dog's weight, a few days before the drive.</p>
+                    table above based on your community dog's weight, a few days before the drive.</p>
             </details>
 
             <details class="bg-white border border-orange-100 rounded-xl px-4 py-3">
@@ -551,7 +581,7 @@
                     Can I register more than one dog?
                     <i data-lucide="chevron-down" class="w-4 h-4 faq-chevron text-rabies-orange-dark"></i>
                 </summary>
-                <p class="text-sm text-stone-600 mt-2">Absolutely — just enter the total number of dogs in the form and
+                <p class="text-sm text-stone-600 mt-2">Absolutely - just enter the total number of dogs in the form and
                     we'll
                     vaccinate all of them during the visit.</p>
             </details>
@@ -561,7 +591,7 @@
                     Will the vaccination hurt my dog?
                     <i data-lucide="chevron-down" class="w-4 h-4 faq-chevron text-rabies-orange-dark"></i>
                 </summary>
-                <p class="text-sm text-stone-600 mt-2">It's a quick, routine injection — like any vaccine, dogs may feel
+                <p class="text-sm text-stone-600 mt-2">It's a quick, routine injection - like any vaccine, dogs may feel
                     a brief
                     pinch but recover within minutes with no lasting discomfort.</p>
             </details>
@@ -573,14 +603,21 @@
     <footer class="bg-rabies-orange-dark text-white">
         <div class="max-w-3xl lg:max-w-6xl mx-auto px-5 lg:px-6 py-7 lg:py-9 text-center">
             <img src="assets/images/logo.png" alt="Animals With Humanity logo"
-                class="w-12 h-12 rounded-full mx-auto mb-3 bg-white p-1" />
+                class="w-35 h-25 mx-auto mb-3" />
             <p class="font-bold">Animals With Humanity</p>
             <p class="text-sm text-orange-100 mt-1 mb-4">Bhopal, Madhya Pradesh</p>
-            <a href="https://wa.me/917067322053" target="_blank"
-                class="inline-flex items-center gap-2 bg-white text-rabies-orange-dark font-bold px-5 py-2.5 rounded-full text-sm">
-                <i data-lucide="message-circle" class="w-4 h-4"></i>
-                Chat with us on WhatsApp
-            </a>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                <a href="https://wa.me/917067322053" target="_blank"
+                    class="inline-flex items-center gap-2 bg-white text-rabies-orange-dark font-bold px-5 py-2.5 rounded-full text-sm">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    Chat with us on WhatsApp
+                </a>
+                <a href="https://awhbharat.org/#financial-support" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 border border-white/50 text-white font-bold px-5 py-2.5 rounded-full text-sm hover:bg-white/10 transition">
+                    <i data-lucide="heart" class="w-4 h-4"></i>
+                    Donate
+                </a>
+            </div>
             <p class="text-xs text-orange-200 mt-6">Powered by WVS, Animals With Humanity &amp; Mission Rabies</p>
         </div>
     </footer>
@@ -675,7 +712,7 @@
         /* ── Multi-step form navigation ──────────────────────────────── */
         const steps = Array.from(document.querySelectorAll(".form-step"));
         const totalSteps = steps.length;
-        const stepTitles = ["Your Details", "Your Dog(s)", "A Few More Things"];
+        const stepTitles = ["Your Details", "Your Community Dog(s)", "A Few More Things"];
         const progressFill = document.getElementById("progress-fill");
         const stepLabel = document.getElementById("step-label");
         const stepTitleEl = document.getElementById("step-title");
@@ -741,7 +778,7 @@
             submitBtn.disabled = loading;
             submitBtn.innerHTML = loading
                 ? `<svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg> Submitting…`
-                : `<i data-lucide="check-circle" class="w-4 h-4"></i> Register — It's Free`;
+                : `<i data-lucide="check-circle" class="w-4 h-4"></i> Register - It's Free`;
             lucide.createIcons();
         }
 
@@ -766,7 +803,7 @@
             setLoading(true);
             try {
                 // Content-Type "text/plain" avoids a CORS preflight that Apps
-                // Script Web Apps can't answer — the script itself still parses
+                // Script Web Apps can't answer - the script itself still parses
                 // the body as JSON (see Code.gs).
                 const res = await fetch(SHEET_WEB_APP_URL, {
                     method: "POST",
@@ -784,7 +821,7 @@
                 form.reset();
                 showToast("🎉 Registered! We'll reach out on WhatsApp or call to confirm your slot.");
             } catch (err) {
-                showError("Network error — please check your connection and try again.");
+                showError("Network error - please check your connection and try again.");
             } finally {
                 setLoading(false);
             }
