@@ -271,8 +271,6 @@
                     class="w-full aspect-[4/3] object-cover shrink-0" />
                 <img src="assets/images/IMG_4932.PNG" alt="Volunteers preparing vaccine kits"
                     class="w-full aspect-[4/3] object-cover shrink-0" />
-                <img src="assets/images/Screenshot from 2026-09-05 15-05-56.png"" alt="Volunteers preparing vaccine kits"
-                    class="w-full aspect-[4/3] object-cover shrink-0" />
                     
             </div>
 
@@ -432,6 +430,13 @@
                         <label class="text-sm font-semibold block mb-1">PIN Code *</label>
                         <input required id="pinCode" name="pinCode" type="text" inputmode="numeric" maxlength="6"
                             placeholder="462001"
+                            class="w-full border border-stone-200 rounded-xl px-3.5 py-2.5 lg:py-3 text-sm lg:text-base focus:outline-none focus:ring-2 focus:ring-rabies-orange" />
+                    </div>
+
+                    <div>
+                        <label class="text-sm font-semibold block mb-1">Ward Number *</label>
+                        <input required id="wardNumber" name="wardNumber" type="text" inputmode="numeric"
+                            maxlength="10" placeholder="e.g. 32"
                             class="w-full border border-stone-200 rounded-xl px-3.5 py-2.5 lg:py-3 text-sm lg:text-base focus:outline-none focus:ring-2 focus:ring-rabies-orange" />
                     </div>
 
@@ -751,7 +756,7 @@
 
         // Paste the Web App URL you get after deploying Code.gs
         // (Deploy > New deployment > Web app). It ends in /exec.
-        const SHEET_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzPE4Bb8auJ36iQ5TnGCXKcEqpsNE6rv-deCNDA626b_8eO2OWGzX0KOiQlJvV7hY9r/exec";
+        const SHEET_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyhwArQ3ByWpY8KmLAr1TIXx35VxH3K1L5GC-yGf293-aLAoqwXobXfyQcmSfBsX0z9/exec";
 
         const form = document.getElementById("rabies-form");
         const errorEl = document.getElementById("form-error");
