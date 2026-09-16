@@ -454,6 +454,12 @@
                             class="w-full border border-stone-200 rounded-xl px-3.5 py-2.5 lg:py-3 text-sm lg:text-base focus:outline-none focus:ring-2 focus:ring-rabies-orange" />
                     </div>
                     <div>
+                        <label class="text-sm font-semibold block mb-1">Email *</label>
+                        <input required id="email" name="email" type="email" autocomplete="email"
+                            placeholder="you@example.com"
+                            class="w-full border border-stone-200 rounded-xl px-3.5 py-2.5 lg:py-3 text-sm lg:text-base focus:outline-none focus:ring-2 focus:ring-rabies-orange" />
+                    </div>
+                    <div>
                         <label class="text-sm font-semibold block mb-1">WhatsApp / Alt.</label>
                         <input id="whatsappNumber" name="whatsappNumber" type="tel" inputmode="numeric"
                             maxlength="10" placeholder="Optional"
@@ -756,7 +762,7 @@
 
         // Paste the Web App URL you get after deploying Code.gs
         // (Deploy > New deployment > Web app). It ends in /exec.
-        const SHEET_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyhwArQ3ByWpY8KmLAr1TIXx35VxH3K1L5GC-yGf293-aLAoqwXobXfyQcmSfBsX0z9/exec";
+        const SHEET_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyBeBtO7Gz3orGr_eT9XC2JYiGdIlkZ8NIaXgn4vgXHdbqLDBTN9TurD5h1MlRwYtYp/exec";
 
         const form = document.getElementById("rabies-form");
         const errorEl = document.getElementById("form-error");
@@ -850,30 +856,30 @@
             if (!/^\d{6}$/.test(cleanPin)) {
                 return showError("Please enter a valid 6-digit PIN code.");
             }
+            const cleanEmail = (data.email || "").trim();
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleanEmail)) {
+                return showError("Please enter a valid email address.");
+            }
             if (!data.dogCount || parseInt(data.dogCount, 10) <= 0) {
                 return showError("Please enter at least 1 dog.");
             }
 
             setLoading(true);
             try {
-                // Content-Type "text/plain" avoids a CORS preflight that Apps
-                // Script Web Apps can't answer - the script itself still parses
-                // the body as JSON (see Code.gs).
-                const res = await fetch(SHEET_WEB_APP_URL, {
+                // Apps Script Web Apps reply with 302 → script.googleusercontent.com,
+                // and that follow-up GET often 404s / fails CORS. The POST already
+                // saved the row and sent mail. mode: "no-cors" avoids treating that
+                // redirect as a failed request. Content-Type text/plain skips a
+                // CORS preflight the Web App cannot answer.
+                await fetch(SHEET_WEB_APP_URL, {
                     method: "POST",
+                    mode: "no-cors",
                     headers: { "Content-Type": "text/plain;charset=utf-8" },
                     body: JSON.stringify(data),
                 });
-                const result = await res.json();
-
-                if (!result.success) {
-                    showError(result.error || "Something went wrong. Please try again.");
-                    setLoading(false);
-                    return;
-                }
 
                 form.reset();
-                showToast("🎉 Registered! We'll reach out on WhatsApp or call to confirm your slot.");
+                showToast("🎉 Registered! Check your email for confirmation. We'll also reach out on WhatsApp or call.");
             } catch (err) {
                 showError("Network error - please check your connection and try again.");
             } finally {
